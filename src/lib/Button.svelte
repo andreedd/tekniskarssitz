@@ -1,17 +1,45 @@
 <script>
+    export let buttonUrl;
+    export let buttonText;
+    export let useModal;
+    import Modal from './Modal.svelte';
 
+    let showModal = false;
 </script>
 
-<a class="fancy" href="https://tfif.fi">
+{#if useModal}
+<a class="fancy" on:click="{() => showModal = true}">
     <span class="top-key"></span>
-    <span class="text">Till Evenemanget</span>
+    <span class="text">{buttonText}</span>
     <span class="bottom-key-1"></span>
     <span class="bottom-key-2"></span>
 </a>
-  
+{:else}
+<a class="fancy" href={buttonUrl}>
+    <span class="top-key"></span>
+    <span class="text">{buttonText}</span>
+    <span class="bottom-key-1"></span>
+    <span class="bottom-key-2"></span>
+</a>
+{/if}
+
+{#if showModal}
+	<Modal on:close="{() => showModal = false}">
+		<h2 slot="header">
+			Teknisk Årssitz
+		</h2>
+        <p>Teknisk Årssitz är en finare sitz som årligen ordnas av TFiF's utskott De Yngres Råd (DYR).</p>
+        <p>Sitzen ordnas vartannat år i Helsingfors och vartannat år i Åbo.</p>
+        <p>Bland deltagarna hittas medlemmar från Teknologföreningen, Kemistklubben, Datateknologerna, Spectrum, Entech, Quantum, Sigma, och Infå</p>
+        <p>Sitzen är ämnad för de som är i magisterskedet i studierna eller nyligen blivit utexaminerade. Men alla TFiF medlemmar är ändå välkomna!</p>
+	</Modal>
+{/if}
+
+
 <style>
     /* From uiverse.io */
     .fancy {
+    margin-top: 10px !important;
     border-radius: 5px !important;
     background-color: transparent;
     border: 2px solid #dfaf5d;

@@ -5,7 +5,11 @@
   import gearLarge from './assets/gearL.png'
   import cornerLines from './assets/lines.png'
   import tfifLogo from './assets/TFiF-bla-logo-utan-text-digi.png'
-  import Counter from './lib/Counter.svelte'
+  import chPolymersLogo from './assets/ch-polymers.png'
+  import chemigateLogo from './assets/chemigate.svg'
+  import mirkaLogo from './assets/mirka.png'
+  import VMLogo from './assets/VM_Textlogo.svg'
+  import identioLogo from './assets/Identio_logo_Color.png'
   import Countdown from './lib/Countdown.svelte'
   import Button from './lib/Button.svelte'
 </script>
@@ -15,12 +19,6 @@
     <img src={cornerLines} alt="">
   </div>
   <div class="corner-lines-left">
-    <img src={cornerLines} alt="">
-  </div>
-  <div class="corner-lines-bottom-right">
-    <img src={cornerLines} alt="">
-  </div>
-  <div class="corner-lines-bottom-left">
     <img src={cornerLines} alt="">
   </div>
   <div class="gears">
@@ -50,10 +48,19 @@
     <div>
       <Countdown />
     </div>
-    <Button />
-    <div class="tfif-logo">
-      <img src={tfifLogo} alt="tfif">
-    </div>
+    <Button buttonUrl="https://tfif.fi/" buttonText="Till Evenemanget" useModal={false}/>
+    <Button buttonUrl="/about" buttonText="Om Sitzen" useModal={true}/>
+  </div>
+  <div class="sponsor-logos">
+    <a href="https://tfif.fi/"><img src={tfifLogo} alt="TFiF"></a>
+    <a href="https://ch-polymers.com/"><img src={chPolymersLogo} alt="CHPolymers"></a>
+    <a href="https://identio.fi/"><img src={identioLogo} alt="Identio"></a>
+    <a href="https://chemigate.fi/"><img src={chemigateLogo} alt="Chemigate"></a>
+    <a href="https://www.mirka.com/"><img src={mirkaLogo} alt="Mirka"></a>
+    <a href="https://www.valuemotive.com/"><img src={VMLogo} alt="Valuemotives"></a>
+  </div>
+  <div class="bottom-lines">
+    <div class="lines"></div>
   </div>
 </main>
 
@@ -76,9 +83,10 @@
     margin: 5px;
   }
 
-  .tfif-logo img {
-    width: 100px;
-    margin-top: 5vh;
+  .sponsor-logos img{
+    margin-top: 30px;
+    width: 150px;
+    padding: 10px;
   }
 
   main .text-content {
@@ -106,22 +114,15 @@
     right: 0;
   }
 
-  .corner-lines-bottom-left img{
-    position: absolute;
-    width: 130px;
-    height: 130px;
-    bottom: 0;
-    left: 0;
-    transform: scaleY(-1) scaleX(-1);
+  .bottom-lines {
+    height: 10px;
+    width: 90%;
   }
 
-  .corner-lines-bottom-right img{
-    transform: scaleY(-1);
-    position: absolute;
-    width: 130px;
-    height: 130px;
-    bottom: 0;
-    right: 0;
+  .lines {
+    padding: 3px;
+    border-top: 2px solid #dfaf5d;
+    border-bottom: 2px solid #dfaf5d;
   }
 
   .gears {
@@ -252,23 +253,8 @@
     height: 250px;
   }
 
-  .corner-lines-bottom-left img{
-    width: 250px;
-    height: 250px;
-  }
-
-  .corner-lines-bottom-right img{
-    width: 250px;
-    height: 250px;
-  }
-
   .main-header {
     font-size: 4em;
-  }
-
-  .tfif-logo img {
-    width: 200px;
-    margin-top: 35px;
   }
 
   .gears {
@@ -321,6 +307,10 @@
     animation-duration: 20000ms;
     width: 400px;
     height: 400px;
+  }
+
+  .sponsor-logos img{
+    width: 200px;
   }
 }
 </style>
