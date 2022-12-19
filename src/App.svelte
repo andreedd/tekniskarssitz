@@ -10,6 +10,7 @@
   import mirkaLogo from './assets/mirka.png'
   import VMLogo from './assets/VM_Textlogo.svg'
   import identioLogo from './assets/Identio_logo_Color.png'
+  import fntLogo from './assets/aafnt.png'
   import Countdown from './lib/Countdown.svelte'
   import Button from './lib/Button.svelte'
 </script>
@@ -58,6 +59,7 @@
     <a href="https://chemigate.fi/"><img src={chemigateLogo} alt="Chemigate"></a>
     <a href="https://www.mirka.com/"><img src={mirkaLogo} alt="Mirka"></a>
     <a href="https://www.valuemotive.com/"><img src={VMLogo} alt="Valuemotives"></a>
+    <a href="https://www.abo.fi/om-abo-akademi/fakulteterna/fakulteten-for-naturvetenskaper-och-teknik/"><img src={fntLogo} alt="FNT"></a>
   </div>
   <div class="bottom-lines">
     <div class="lines"></div>
