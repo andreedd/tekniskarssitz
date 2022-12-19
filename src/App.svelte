@@ -59,7 +59,7 @@
     <a href="https://chemigate.fi/"><img src={chemigateLogo} alt="Chemigate"></a>
     <a href="https://www.mirka.com/"><img src={mirkaLogo} alt="Mirka"></a>
     <a href="https://www.valuemotive.com/"><img src={VMLogo} alt="Valuemotives"></a>
-    <a href="https://www.abo.fi/om-abo-akademi/fakulteterna/fakulteten-for-naturvetenskaper-och-teknik/"><img src={fntLogo} alt="FNT"></a>
+    <a href="https://www.abo.fi/om-abo-akademi/fakulteterna/fakulteten-for-naturvetenskaper-och-teknik/" class="aalogo"><img src={fntLogo} alt="FNT"></a>
   </div>
   <div class="bottom-lines">
     <div class="lines"></div>
@@ -87,8 +87,14 @@
 
   .sponsor-logos img{
     margin-top: 30px;
-    width: 150px;
+    max-height: 150px;
+    max-width: 150px;
     padding: 10px;
+  }
+
+  .aalogo img{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
   }
 
   main .text-content {
@@ -312,7 +318,7 @@
   }
 
   .sponsor-logos img{
-    width: 200px;
+    max-width: 200px;
   }
 }
 </style>
