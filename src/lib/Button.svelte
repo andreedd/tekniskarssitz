@@ -28,10 +28,10 @@
 		<h2 slot="header">
 			Teknisk Årssitz
 		</h2>
-        <p>Teknisk Årssitz är en finare sitz som årligen ordnas av TFiF's utskott De Yngres Råd (DYR).</p>
+        <p>Den Tekniska årssitzen är en finare sitz som årligen ordnas av TFiFs studerandeutskott De yngres råd (DYR).</p>
         <p>Sitzen ordnas vartannat år i Helsingfors och vartannat år i Åbo.</p>
-        <p>Bland deltagarna hittas medlemmar från Teknologföreningen, Kemistklubben, Datateknologerna, Spectrum, Entech, Quantum, Sigma, och Infå</p>
-        <p>Sitzen är ämnad för de som är i magisterskedet i studierna eller nyligen blivit utexaminerade. Men alla TFiF medlemmar är ändå välkomna!</p>
+        <p>Bland deltagarna hittas bl.a. medlemmar från Teknologföreningen, Kemistklubben, Datateknologerna, Spektrum, Entech, Quantum, Sigma och Infå.</p>
+        <p>Sitzen är ämnad för de som är i slutskedet av studierna och de som nyligen blivit utexaminerade, men alla TFiF-medlemmar är ändå välkomna!</p>
 	</Modal>
 {/if}
 

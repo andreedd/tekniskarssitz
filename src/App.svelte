@@ -49,7 +49,7 @@
     <div>
       <Countdown />
     </div>
-    <Button buttonUrl="https://tfif.fi/" buttonText="Till Evenemanget" useModal={false}/>
+    <Button buttonUrl="https://tfif.fi/evenemang/teknisk-arssitz-med-tfif-2/" buttonText="Till Evenemanget" useModal={false}/>
     <Button buttonUrl="/about" buttonText="Om Sitzen" useModal={true}/>
   </div>
   <div class="sponsor-logos">
